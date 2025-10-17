@@ -1,0 +1,45 @@
+{
+  "name": "royzhu/weather-horoscope-package",
+  "description": "Laravel 天氣資訊和星座運勢套件，整合中央氣象局 API 和星座運勢爬取功能",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roy Zhu",
+      "email": "royzhu@example.com"
+    }
+  ],
+  "keywords": [
+    "laravel",
+    "weather",
+    "horoscope",
+    "astrology",
+    "cwb",
+    "taiwan",
+    "forecast"
+  ],
+  "homepage": "https://github.com/royzhu/weather-horoscope-package",
+  "support": {
+    "issues": "https://github.com/royzhu/weather-horoscope-package/issues",
+    "source": "https://github.com/royzhu/weather-horoscope-package"
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RoyZhu\\WeatherHoroscope\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RoyZhu\\WeatherHoroscope\\WeatherHoroscopeServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
